@@ -42,4 +42,15 @@ app.get("/blogs/:id", convertId, (req, res) => {
   res.send(blog[index]);
 });
 
+//delete single object
+app.delete("/blogs/:id", convertId, (req, res) => {
+  const id = req.params.id;
+  const index = blog.findIndex((item) => item.id === id);
+  if (index === -1) {
+    res.status(404).send("Not found");
+  }
+  blog.splice(index, 1);
+  res.send("Success delete");
+});
+
 app.listen(port, () => console.log(`server is running on port ${port}`));

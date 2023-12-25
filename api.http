@@ -30,3 +30,9 @@ Content-Type: application/json
     "title": "My first updated blog",
     "content": "This is my first updated blog"
 }
+
+
+###
+DELETE http://localhost:3000/blogs/3
+
+``
