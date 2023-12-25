@@ -7,25 +7,26 @@ GET http://localhost:3000/blogs
 
 POST http://localhost:3000/blogs
 Content-Type: application/json
+
 {
-    "id" : 1,
     "title": "My first blog",
-    "content": "This is my first blog",
-    
+    "content": "This is my first blog"
 }
 
+
 ###
-GET http://localhost:3000/blogs/1
+
+
+GET http://localhost:3000/blogs/3
+
 
 ###
 
 PUT http://localhost:3000/blogs/1
 Content-Type: application/json
+
 {
     "id" : 1,
     "title": "My first updated blog",
-    "content": "This is my first updated blog",
-    
+    "content": "This is my first updated blog"
 }
-
-
