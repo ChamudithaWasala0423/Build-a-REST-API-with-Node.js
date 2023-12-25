@@ -47,7 +47,7 @@ app.delete("/blogs/:id", convertId, (req, res) => {
   const id = req.params.id;
   const index = blog.findIndex((item) => item.id === id);
   if (index === -1) {
-    res.status(404).send("Not found");
+    return res.status(404).send("Not found");
   }
   blog.splice(index, 1);
   res.send("Success delete");

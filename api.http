@@ -33,6 +33,4 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:3000/blogs/3
-
-``
+DELETE http://localhost:3000/blogs/4
